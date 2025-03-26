@@ -11,7 +11,7 @@ import {
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 
-import Navbar from '@/components/Navbar'
+import Sidebar from '@/components/Sidebar'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -52,8 +52,8 @@ const playfairDisplay = Playfair({
 })
 
 export const metadata: Metadata = {
-  title: 'Analytics of Cryptocurrency holdings', 
-  description: 'Analytics of Cryptocurrency holdings', 
+  title: 'Analytics of Cryptocurrency holdings',
+  description: 'Analytics of Cryptocurrency holdings',
 }
 
 export default function RootLayout({
@@ -79,9 +79,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='max-w-7xl w-full mx-auto'>
-            <Navbar />
-            {children}
+          <div className='relative max-w-7xl mx-auto flex py-2  pl-72  max-sm:pl-16'>
+            <div className='max-w-7xl w-full mx-auto'>
+              <Sidebar />
+              {children}
+            </div>
           </div>
         </ThemeProvider>
       </body>

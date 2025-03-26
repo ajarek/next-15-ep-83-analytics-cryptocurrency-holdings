@@ -14,7 +14,7 @@ import Image from 'next/image'
 
 const Logout = async ({ session }: { session: Session | null }) => {
   return (
-    <>
+    <div className='flex flex-col gap-6  '>
       {session ? (
         <LogoutBtn />
       ) : (
@@ -94,7 +94,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
           </Link>
         </>
       )}
-    </>
+    </div>
   )
 }
 

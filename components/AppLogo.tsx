@@ -1,16 +1,15 @@
-import { LayoutDashboard } from "lucide-react";
+import {Coins } from "lucide-react";
 import Link from "next/link";
+import { Label } from "./ui/label";
 
 const AppLogo=()=> {
   return (
     <div className="flex items-center justify-between  ">
-      <Link href={'/'} className="flex gap-2 items-center">
+      <Link href={'/'} className="w-full flex items-center gap-8">
         <div className="w-10 h-10 bg-primary rounded-md flex items-center justify-center">
-          <LayoutDashboard className="text-primary-foreground" />
+        <Coins size={48} className="text-primary-foreground" />
         </div>
-        <h1 className={"text-[20px] flex gap-1 max-md:hidden"}>
-          <span className="font-bold">test</span>
-        </h1>
+        <Label className='text-2xl max-sm:hidden'>KryptoAktywa</Label>
       </Link>
     </div>
   );
