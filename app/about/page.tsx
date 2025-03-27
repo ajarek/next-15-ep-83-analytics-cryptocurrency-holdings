@@ -11,6 +11,10 @@ const About = () => {
           Nasz zespół składa się z pełnych pasji profesjonalistów, którzy dążą do zapewnienia
           najlepszych możliwych doświadczeń dla naszych użytkowników.
         </p>
+        <p>  Dostarczamy najnowocześniejszą technologię i eksperckie wskazówki, aby pomóc Ci
+        pokonać wyzwania i osiągnąć niezwykły sukces. Nasz zespół jest
+        zaangażowany w dostarczanie wyjątkowych rezultatów i umożliwienie Ci osiągnięcia
+        pełnego potencjału. Dołącz do nas w podróży rozwoju i transformacji.</p>
         <p>
           Zachęcamy do kontaktu, jeśli masz jakiekolwiek pytania lub uwagi.
           Zawsze jesteśmy tutaj, aby pomóc!

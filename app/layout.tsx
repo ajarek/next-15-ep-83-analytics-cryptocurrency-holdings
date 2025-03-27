@@ -79,11 +79,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='relative max-w-7xl mx-auto flex py-2  pl-72  max-sm:pl-16'>
-            <div className='max-w-7xl w-full mx-auto'>
+          <div className='relative max-w-7xl mx-auto   pl-64  max-sm:pl-16'>
+           
               <Sidebar />
               {children}
-            </div>
+            
           </div>
         </ThemeProvider>
       </body>

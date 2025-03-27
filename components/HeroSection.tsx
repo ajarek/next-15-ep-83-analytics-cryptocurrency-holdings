@@ -1,18 +1,12 @@
-import { Button } from "@/components/ui/button";
+
 
 const HeroSection=()=> {
   return (
-    <div className="flex flex-col items-center justify-center text-center  px-4  ">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">
-        Odblokuj Swój Potencjał z Naszymi Innowacyjnymi Rozwiązaniami
-      </h1>
-      <p className="text-lg text-gray-600 mb-8 mx-0 md:mx-44">
-        Dostarczamy najnowocześniejszą technologię i eksperckie wskazówki, aby pomóc Ci
-        pokonać wyzwania i osiągnąć niezwykły sukces. Nasz zespół jest
-        zaangażowany w dostarczanie wyjątkowych rezultatów i umożliwienie Ci osiągnięcia
-        pełnego potencjału. Dołącz do nas w podróży rozwoju i transformacji.
+    <div className="w-full flex flex-col items-center justify-center text-center  p-4 bg-primary border-l-2">
+      <h1 className="text-2xl  font-bold ">Zainwestuj w świat kryptowalut.</h1>
+      <p className="text-lg  mb-4 mx-0 md:mx-44">
+        Buduj i powiększaj swój majątek.
       </p>
-      <Button className="h-12">Odkryj Nasze Usługi</Button>
     </div>
   );
 }

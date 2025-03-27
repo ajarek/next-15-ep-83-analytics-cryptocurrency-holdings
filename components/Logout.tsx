@@ -20,7 +20,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
       ) : (
         <Link
           href='/login'
-          className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center hover:border-2 border-primary  transition-all delay-200 '
+          className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center hover:border-2 border-primary  transition-all delay-200 '
           aria-label='Logowanie'
         >
           <TooltipProvider>
@@ -28,7 +28,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
               <TooltipTrigger>
                 {' '}
                 <KeyRound
-                  size={32}
+                  size={24}
                   strokeWidth={1}
                   aria-label='Logowanie'
                 />
@@ -44,7 +44,7 @@ const Logout = async ({ session }: { session: Session | null }) => {
         <>
           <Link
             href='/my-courses'
-            className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center secondary-foreground  transition-all delay-200 border-2 border-green-500 lg:hidden'
+            className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center secondary-foreground  transition-all delay-200 border-2 border-green-500 lg:hidden'
             aria-label='Moje kursy'
           >
             <TooltipProvider>
@@ -52,8 +52,8 @@ const Logout = async ({ session }: { session: Session | null }) => {
                 <TooltipTrigger className='text-2xl'>
                   <Image
                     src={session.user?.image || ''}
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                     alt='user'
                     className='rounded-full'
                   />
@@ -69,16 +69,16 @@ const Logout = async ({ session }: { session: Session | null }) => {
           </Link>
           <Link
             href='/'
-            className='bg-secondary w-10 h-10 rounded-full flex justify-center items-center secondary-foreground  transition-all delay-200 border-2 border-green-500 max-lg:hidden'
+            className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center secondary-foreground  transition-all delay-200 border-2 border-green-500 max-lg:hidden'
             aria-label='Moje kursy'
           >
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger className='text-2xl'>
+                <TooltipTrigger className='text-xl'>
                   <Image
                     src={session.user?.image || ''}
-                    width={40}
-                    height={40}
+                    width={30}
+                    height={30}
                     alt='user'
                     className='rounded-full'
                   />
