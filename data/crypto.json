@@ -4,219 +4,398 @@
   "name": "Bitcoin",
    "symbol": "BTC",
    "price": "$87.886,4",
+   "price0":82000,
    "Wol. (24h)": "$29,99B",
    "icon": "/images/btc-bitcoin.png",
    "change(24h)": "-0,27%",
    "change(7d)": "7,34%",
-   "capitalization": "$1,75T"
+   "capitalization": "$1,75T",
+   "chartData": [
+    { "hour": "06:00", "kurs": 82425 },
+    { "hour": "10:00", "kurs": 86121 },
+    { "hour": "14:00", "kurs": 86425 },
+    { "hour": "18:00", "kurs": 83254 },
+    { "hour": "22:00", "kurs": 84254 },
+    { "hour": "02:00", "kurs": 87886 }
+   ]
  },
  {
   "id":"2", 
   "name": "Ethereum",
    "symbol": "ETH",
    "price": "$2.067,59",
+   "price0":2000,
    "Wol. (24h)": "$11,70B",
    "icon": "/images/eth-ethereum.png",
    "change(24h)": "-0,80%",
    "change(7d)": "8,28%",
-   "capitalization": "$249,87B"
+   "capitalization": "$249,87B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 2021 },
+    { "hour": "10:00", "kurs": 2042 },
+    { "hour": "14:00", "kurs": 2012 },
+    { "hour": "18:00", "kurs": 2054 },
+    { "hour": "22:00", "kurs": 2067 },
+    { "hour": "02:00", "kurs": 2036 }
+   ]
  },
  {
    "id":"3",
    "name": "Tether USDt",
    "symbol": "USDT",
    "price": "$1,0003",
+   "price0":0.70,
    "Wol. (24h)": "$58,29B",
    "icon": "/images/usdt-tether.png",
    "change(24h)": "0,01%",
    "change(7d)": "0,06%",
-   "capitalization": "$143,82B"
+   "capitalization": "$143,82B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 1 },
+    { "hour": "10:00", "kurs": 1.20},
+    { "hour": "14:00", "kurs": 0.80},
+    { "hour": "18:00", "kurs": 1.35 },
+    { "hour": "22:00", "kurs": 1.00 },
+    { "hour": "02:00", "kurs": 1.20 }
+   ]
  },
  {
    "id":"4",
    "name": "XRP",
    "symbol": "XRP",
    "price": "$2,4480",
+   "price0":1.90,
    "Wol. (24h)": "$2,79B",
    "icon": "/images/xrp-xrp.png",
    "change(24h)": "-0,46%",
    "change(7d)": "8,54%",
-   "capitalization": "$142,99B"
+   "capitalization": "$142,99B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 2.00 },
+    { "hour": "10:00", "kurs": 2.40 },
+    { "hour": "14:00", "kurs": 1.97 },
+    { "hour": "18:00", "kurs": 2.65 },
+    { "hour": "22:00", "kurs": 2.20 },
+    { "hour": "02:00", "kurs": 2.44 }
+   ]
  },
  {
    "id":"5",
    "name": "BNB",
    "symbol": "BNB",
    "price": "$630,40",
+   "price0":600,
    "Wol. (24h)": "$2,24B",
    "icon": "/images/bnb-binance-coin.png",
    "change(24h)": "-0,80%",
    "change(7d)": "0,43%",
-   "capitalization": "$89,96B"
+   "capitalization": "$89,96B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 610 },
+    { "hour": "10:00", "kurs": 640 },
+    { "hour": "14:00", "kurs": 620 },
+    { "hour": "18:00", "kurs": 632 },
+    { "hour": "22:00", "kurs": 610 },
+    { "hour": "02:00", "kurs": 630 }
+   ]
  },
  {
    "id":"6",
    "name": "Solana",
    "symbol": "SOL",
    "price": "$143,924",
+   "price0":125,
    "Wol. (24h)": "$3,57B",
    "icon": "/images/sol-solana.png",
    "change(24h)": "1,78%",
    "change(7d)": "16,30%",
-   "capitalization": "$74,15B"
+   "capitalization": "$74,15B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 131 },
+    { "hour": "10:00", "kurs": 128 },
+    { "hour": "14:00", "kurs": 152 },
+    { "hour": "18:00", "kurs": 143 },
+    { "hour": "22:00", "kurs": 128 },
+    { "hour": "02:00", "kurs": 140 }
+   ]
  },
  {
    "id":"7",
    "name": "USDC",
    "symbol": "USDC",
    "price": "$0,9997",
+   "price0":0.60,
    "Wol. (24h)": "$8,97B",
    "icon": "/images/usdc-usd-coin.png",
    "change(24h)": "-0,02%",
    "change(7d)": "0,03%",
-   "capitalization": "$60,09B"
+   "capitalization": "$60,09B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 1.10 },
+    { "hour": "14:00", "kurs": 1.08 },
+    { "hour": "18:00", "kurs": 0.75 },
+    { "hour": "22:00", "kurs": 1.28 },
+    { "hour": "02:00", "kurs": 0.99 }
+   ]
  },
  {
    "id":"8",
    "name": "Dogecoin",
    "symbol": "DOGE",
    "price": "$0,191302",
+   "price0":0.01,
    "Wol. (24h)": "$1,56B",
    "icon": "/images/doge-dogecoin.png",
    "change(24h)": "3,08%",
    "change(7d)": "14,97%",
-   "capitalization": "$28,49B"
+   "capitalization": "$28,49B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 0.15 },
+    { "hour": "10:00", "kurs": 0.25 },
+    { "hour": "14:00", "kurs": 0.20 },
+    { "hour": "18:00", "kurs": 0.13 },
+    { "hour": "22:00", "kurs": 0.22 },
+    { "hour": "02:00", "kurs": 0.19 }
+   ]
  },
  {
    "id":"9",
    "name": "Cardano",
    "symbol": "ADA",
    "price": "$0,7470",
+   "price0":0.10,
    "Wol. (24h)": "$1,08B",
    "icon": "/images/ada-cardano.png",
    "change(24h)": "1,46%",
    "change(7d)": "8,13%",
-   "capitalization": "$26,46B"
+   "capitalization": "$26,46B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 0.15 },
+    { "hour": "10:00", "kurs": 0.25 },
+    { "hour": "14:00", "kurs": 0.20 },
+    { "hour": "18:00", "kurs": 0.13 },
+    { "hour": "22:00", "kurs": 0.22 },
+    { "hour": "02:00", "kurs": 0.19 }
+   ]
  },
  {
    "id":"10",
    "name": "TRON",
    "symbol": "TRX",
    "price": "$0,228191",
+   "price0":0.10,
    "Wol. (24h)": "$381,92M",
    "icon": "/images/trx-tron.png",
    "change(24h)": "-0,26%",
    "change(7d)": "-2,38%",
-   "capitalization": "$21,71B"
+   "capitalization": "$21,71B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 0.15 },
+    { "hour": "10:00", "kurs": 0.25 },
+    { "hour": "14:00", "kurs": 0.20 },
+    { "hour": "18:00", "kurs": 0.13 },
+    { "hour": "22:00", "kurs": 0.22 },
+    { "hour": "02:00", "kurs": 0.19 }
+   ]
  },
  {
    "id":"11",
    "name": "Chainlink",
    "symbol": "LINK",
    "price": "$15,47",
+   "price0":10.00,
    "Wol. (24h)": "$322,39M",
    "icon": "/images/link-chainlink.png",
    "change(24h)": "2,15%",
    "change(7d)": "13,45%",
-   "capitalization": "$10,19B"
+   "capitalization": "$10,19B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 11.50 },
+    { "hour": "10:00", "kurs": 12.50 },
+    { "hour": "14:00", "kurs": 10.80 },
+    { "hour": "18:00", "kurs": 13.50 },
+    { "hour": "22:00", "kurs": 12.80 },
+    { "hour": "02:00", "kurs": 15.47 }
+   ]
  },
  {
    "id":"12",
    "name": "Avalanche",
    "symbol": "AVAX",
    "price": "$23,09",
+   "price0":18.00,
    "Wol. (24h)": "$358,75M",
    "icon": "/images/avax-avalanche.png",
    "change(24h)": "8,11%",
    "change(7d)": "25,35%",
-   "capitalization": "$9,65B"
+   "capitalization": "$9,65B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 18.50 },
+    { "hour": "10:00", "kurs": 22.50 },
+    { "hour": "14:00", "kurs": 17.00 },
+    { "hour": "18:00", "kurs": 23.50 },
+    { "hour": "22:00", "kurs": 18.80 },
+    { "hour": "02:00", "kurs": 23.20 }
+   ]
  },
  {
    "id":"13",
    "name": "UNUS SED LEO",
    "symbol": "LEOu",
    "price": "$9,7744",
+   "price0":6.00,
    "Wol. (24h)": "$2,76M",
    "icon": "/images/leo-leo-token.png",
    "change(24h)": "0,16%",
    "change(7d)": "0,41%",
-   "capitalization": "$9,03B"
+   "capitalization": "$9,03B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 6.20 },
+    { "hour": "10:00", "kurs": 8.70 },
+    { "hour": "14:00", "kurs": 7.20 },
+    { "hour": "18:00", "kurs": 10.00 },
+    { "hour": "22:00", "kurs": 6.80 },
+    { "hour": "02:00", "kurs": 9.80 }
+   ]
  },
  {
    "id":"14",
    "name": "Stellar",
    "symbol": "XLM",
    "price": "$0,29184",
+   "price0":0.10,
    "Wol. (24h)": "$168,52M",
    "icon": "/images/xlm-stellar.png",
    "change(24h)": "0,13%",
    "change(7d)": "8,55%",
-   "capitalization": "$9,01B"
+   "capitalization": "$9,01B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 0.15 },
+    { "hour": "10:00", "kurs": 0.25 },
+    { "hour": "14:00", "kurs": 0.20 },
+    { "hour": "18:00", "kurs": 0.13 },
+    { "hour": "22:00", "kurs": 0.22 },
+    { "hour": "02:00", "kurs": 0.19 }
+   ]
  },
  {
    "id":"15",
    "name": "Toncoin",
    "symbol": "TON",
    "price": "$3,5928",
+   "price0":2.00,
    "Wol. (24h)": "$121,79M",
    "icon": "/images/toncoin-the-open-network.png",
    "change(24h)": "-3,06%",
    "change(7d)": "0,96%",
-   "capitalization": "$8,91B"
+   "capitalization": "$8,91B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 2.50 },
+    { "hour": "10:00", "kurs": 4.00 },
+    { "hour": "14:00", "kurs": 3.20 },
+    { "hour": "18:00", "kurs": 2.20},
+    { "hour": "22:00", "kurs": 3.80 },
+    { "hour": "02:00", "kurs": 3.60 }
+   ]
  },
  {
    "id":"16",
    "name": "Hedera",
    "symbol": "HBAR",
    "price": "$0,19494",
+   "price0":0.10,
    "Wol. (24h)": "$222,19M",
    "icon": "/images/hbar-hedera-hashgraph.png",
    "change(24h)": "0,08%",
    "change(7d)": "5,93%",
-   "capitalization": "$8,28B"
+   "capitalization": "$8,28B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 0.15 },
+    { "hour": "10:00", "kurs": 0.25 },
+    { "hour": "14:00", "kurs": 0.20 },
+    { "hour": "18:00", "kurs": 0.13 },
+    { "hour": "22:00", "kurs": 0.22 },
+    { "hour": "02:00", "kurs": 0.19 }
+   ]
  },
  {
    "id":"17",
    "name": "Shiba Inu",
    "symbol": "SHIB",
    "price": "$0,00001391",
+   "price0":0.000013,
    "Wol. (24h)": "$197,36M",
    "icon": "/images/shib-shiba-inu.png",
    "change(24h)": "2,29%",
    "change(7d)": "12,24%",
-   "capitalization": "$8,21B"
+   "capitalization": "$8,21B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 0.000015 },
+    { "hour": "10:00", "kurs": 0.000025 },
+    { "hour": "14:00", "kurs": 0.000008 },
+    { "hour": "18:00", "kurs": 0.000035 },
+    { "hour": "22:00", "kurs": 0.000028 },
+    { "hour": "02:00", "kurs": 0.000020 }
+   ]
  },
  {
    "id":"18",
    "name": "Sui",
    "symbol": "SUI",
    "price": "$2,4489",
+   "price0":2.00,
    "Wol. (24h)": "$699,36M",
    "icon": "/images/sui-sui.png",
    "change(24h)": "1,74%",
    "change(7d)": "8,52%",
-   "capitalization": "$7,81B"
+   "capitalization": "$7,81B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 2.50 },
+    { "hour": "10:00", "kurs": 4.00 },
+    { "hour": "14:00", "kurs": 3.20 },
+    { "hour": "18:00", "kurs": 2.20},
+    { "hour": "22:00", "kurs": 3.80 },
+    { "hour": "02:00", "kurs": 3.60 }
+   ]
  },
  {
    "id":"19",
    "name": "Polkadot",
    "symbol": "pDOTn",
    "price": "$4,659",
+   "price0":2.00,
    "Wol. (24h)": "$161,36M",
    "icon": "/images/dot-polkadot.png",
    "change(24h)": "-0,74%",
    "change(7d)": "5,81%",
-   "capitalization": "$7,30B"
+   "capitalization": "$7,30B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 2.40 },
+    { "hour": "10:00", "kurs": 3.40 },
+    { "hour": "14:00", "kurs": 4.40 },
+    { "hour": "18:00", "kurs": 2.20 },
+    { "hour": "22:00", "kurs": 5.00 },
+    { "hour": "02:00", "kurs": 3.40 }
+   ]
  },
  {
    "id":"20",
    "name": "Litecoin",
    "symbol": "LTC",
    "price": "$93,46",
-   "Wol. (24h)": "$427,84M",
+   "price0":80.00,
+   "Wol(24h)": "$427,84M",
    "icon": "/images/ltc-litecoin.png",
    "change(24h)": "-1,58%",
    "change(7d)": "5,98%",
-   "capitalization": "$7,08B"
+   "capitalization": "$7,08B",
+   "chartData": [
+    { "hour": "06:00", "kurs": 110.00 },
+    { "hour": "10:00", "kurs": 85.00 },
+    { "hour": "14:00", "kurs": 108.00 },
+    { "hour": "18:00", "kurs": 88.00 },
+    { "hour": "22:00", "kurs": 94.00 },
+    { "hour": "02:00", "kurs": 98.00 }
+   ]
  }
 ]
