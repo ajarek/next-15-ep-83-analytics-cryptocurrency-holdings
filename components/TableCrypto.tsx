@@ -36,7 +36,7 @@ const TableCrypto = () => {
       <TableCell className='max-sm:hidden'>{el.name}</TableCell>
       <TableCell>{el.price}</TableCell>
       <TableCell className='max-sm:hidden'>{el['change(24h)']}</TableCell>
-      <TableCell><Link href={`/crypto/${el.id}`}><ShoppingCart size={28} className='hover:text-primary transition-colors duration-300' /></Link></TableCell> 
+      <TableCell><Link href={`/crypto?id=${el.id}`}><ShoppingCart size={28} className='hover:text-primary transition-colors duration-300' /></Link></TableCell> 
     </TableRow>
     )}
   </TableBody>

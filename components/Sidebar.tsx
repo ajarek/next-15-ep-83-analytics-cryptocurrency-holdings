@@ -9,8 +9,9 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { House, Users } from 'lucide-react'
+import { House, ShoppingCart , Users } from 'lucide-react'
 import { Label } from './ui/label'
+import CartLength from './CartLength'
 
 const Sidebar = async () => {
   const session = await auth()
@@ -72,6 +73,31 @@ const Sidebar = async () => {
         <div className='w-full flex items-center gap-8'>
           <ModeToggle />
           <Label className='text-xl max-sm:hidden'>Tło</Label>
+        </div>
+        <div className='w-full flex items-center gap-8'>
+        <Link
+          href='/cart'
+          className='relative bg-secondary w-8 h-8 rounded-full flex justify-center items-center hover:border border-foreground  transition-all delay-200'
+        >
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                {' '}
+                <ShoppingCart
+                  color='red'
+                  size={24}
+                  strokeWidth={1}
+                  aria-label='Koszyk '
+                />
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Koszyk</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          <CartLength />
+        </Link>
+        <Label className='text-xl max-sm:hidden'>Koszyk</Label>
         </div>
       </div>
     </div>
