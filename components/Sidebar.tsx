@@ -18,7 +18,7 @@ const Sidebar = async () => {
   return (
     <div className='fixed top-0 left-0  min-h-screen max-sm:w-16 max-w-64 max-h-[500px] w-full  p-4 gap-6 flex flex-col items-start bg-primary'>
       <AppLogo />
-      <div className='flex flex-col gap-2 items-center  justify-center  '>
+      <div className='flex flex-col gap-4 items-center  justify-center  '>
         <div className='w-full flex items-center gap-8'>
           <Link
             href='/'

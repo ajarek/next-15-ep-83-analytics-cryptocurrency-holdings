@@ -6,14 +6,16 @@ import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import SelectQuantity from '@/components/SelectQuantity'
 import React, { use } from 'react'
-
+import { useToast } from '@/hooks/use-toast'
 
 const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string;  quantity: string }>
 }) => {
   const { id, quantity } = use(searchParams)
   const cryptoId = crypto.find((el) => el.id === id)
-  const { addItemToCart } = useCartStore()
+  const { addItemToCart, items } = useCartStore()
   const router = useRouter()
+  const { toast } = useToast()
+  
   return (
     <div className='w-full min-h-screen flex flex-col justify-center items-center gap-4 '>
       <h1 className='text-xl  text-center'>Crypto {cryptoId?.name}</h1>
@@ -34,7 +36,13 @@ const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string;  quantit
           <SelectQuantity query='quantity' />
 
           <Button onClick={() =>{
-
+          if (items.some((i) => i.id === cryptoId?.id)) {
+            toast({
+              variant: 'destructive',
+              title: 'Ta waluta jest już w Twoim koszyku',
+            })
+            return
+          }    
            addItemToCart({
             id: cryptoId?.id ||'',
             name: cryptoId?.name || '',

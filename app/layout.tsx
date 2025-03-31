@@ -10,7 +10,7 @@ import {
 } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
-
+import { Toaster } from '@/components/ui/toaster'
 import Sidebar from '@/components/Sidebar'
 
 const poppins = Poppins({
@@ -83,7 +83,7 @@ export default function RootLayout({
            
               <Sidebar />
               {children}
-            
+              <Toaster />
           </div>
         </ThemeProvider>
       </body>
