@@ -9,6 +9,7 @@ export type Item = {
   currentRate: string
   icon: string
   quantity: string
+  user?: string
 }
 
 type ItemState = {

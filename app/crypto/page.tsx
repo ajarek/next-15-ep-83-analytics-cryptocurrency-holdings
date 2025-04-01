@@ -8,9 +8,9 @@ import SelectQuantity from '@/components/SelectQuantity'
 import React, { use } from 'react'
 import { useToast } from '@/hooks/use-toast'
 
-const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string;  quantity: string }>
+const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string; user:string;  quantity: string }>
 }) => {
-  const { id, quantity } = use(searchParams)
+  const { id, quantity, user } = use(searchParams)
   const cryptoId = crypto.find((el) => el.id === id)
   const { addItemToCart, items } = useCartStore()
   const router = useRouter()
@@ -51,7 +51,8 @@ const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string;  quantit
             price: cryptoId?.price || '',
             currentRate: cryptoId?.currentRate || '',
             quantity: quantity || '1',
-            })
+            user:user
+          })
             router.push('/')
           }
             }

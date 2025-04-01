@@ -23,7 +23,7 @@ const Cart = () => {
     <div className='min-h-[calc(100vh-4rem)] pt-16 px-8 max-sm:px-4'>
       {items.length > 0 ? (
         <Table>
-          <TableCaption className='w-full text-right text-2xl font-bold space-y-4 '>
+          <TableCaption className='w-full text-right text-xl  space-y-4 '>
             <div>Razem do zapłaty: ${total().toFixed(2)}</div>
             <Button
               onClick={() => router.push('/payment')}
@@ -68,7 +68,7 @@ const Cart = () => {
                   ${(+item.price * +item.quantity).toFixed(2)}
                 </TableCell>
                 <TableCell className='text-center'>
-                  <button onClick={() => removeItemFromCart(item.id)} aria-label='Remove item from cart'>
+                  <button onClick={() => removeItemFromCart(item.id)} aria-label='Usuń element'>
                     ❌
                   </button>
                 </TableCell>
