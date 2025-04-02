@@ -41,6 +41,7 @@ const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string; user:str
               variant: 'destructive',
               title: 'Ta waluta jest już w Twoim koszyku',
             })
+            router.push('/cryptoList')
             return
           }    
            addItemToCart({
@@ -53,7 +54,7 @@ const Crypto = ({  searchParams,}: {searchParams: Promise<{ id: string; user:str
             quantity: quantity || '1',
             user:user
           })
-            router.push('/')
+            router.push('/cryptoList')
           }
             }
             aria-label='Add to cart'

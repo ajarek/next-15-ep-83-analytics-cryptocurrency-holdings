@@ -22,7 +22,7 @@ export function SignIn() {
         } catch (error) {
           console.error(error)
         } finally {
-          redirect('/')
+          redirect('/cryptoList')
         }
       }}
       className='p-4  flex flex-col items-center rounded-lg border-2 shadow-xl gap-4 min-w-[300px]'

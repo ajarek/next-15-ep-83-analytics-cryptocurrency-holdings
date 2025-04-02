@@ -84,10 +84,10 @@ export const addCrypto = async (formData: Item[]) => {
     })));
     
     revalidatePath('/')
-    return { message: 'Successfully added cryptocurrency' }
+    return { message: 'Pomyślnie dodano kryptowalutę' }
   } catch (err) {
     console.log(err)
-    return { message: 'Failed to update to db: ' + err }
+    return { message: 'Nie udało się zapisać do bazy danych: ' + err }
   } finally {
     redirect('/')
   }
