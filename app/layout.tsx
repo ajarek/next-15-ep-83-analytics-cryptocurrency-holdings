@@ -79,7 +79,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className='relative max-w-7xl mx-auto   pl-64  max-sm:pl-16'>
+          <div className='w-full  max-w-[1440px] mx-auto  flex justify-center items-start  min-h-screen bg '>
            
               <Sidebar />
               {children}

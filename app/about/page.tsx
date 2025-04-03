@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className='min-h-[calc(100vh-64px)] flex flex-col items-center justify-center px-8 gap-4'>
+    <div className='w-full min-h-[calc(100vh-64px)] flex flex-col items-center justify-center px-8 gap-4'>
       <h1 className='text-4xl text-primary font-bold mb-6'>O Nas</h1>
       <div className='grid grid-cols-2 max-lg:grid-cols-1 gap-4'>
         <div>

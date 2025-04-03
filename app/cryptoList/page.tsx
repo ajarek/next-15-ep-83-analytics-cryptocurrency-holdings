@@ -12,7 +12,7 @@ const CryptoList = async () => {
     redirect('/login')
   }
   return (
-    <div className='min-h-[calc(100vh-64px)] flex flex-col justify-center items-center gap-4 '>
+    <div className='w-full min-h-[calc(100vh-64px)] flex flex-col justify-center items-center gap-4 '>
       <HeroSection />
       <TableCrypto/>
     </div>

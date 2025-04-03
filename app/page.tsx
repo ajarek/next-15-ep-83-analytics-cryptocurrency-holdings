@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className='min-h-screen flex flex-col justify-start items-center '>
+    <div className='w-full min-h-screen flex flex-col justify-start items-center '>
       <div className='relative w-full flex justify-center rounded-lg overflow-hidden   '>
-        <div className='relative w-full h-[598px]'>
+        <div className='relative w-full h-[598px] '>
           <Image
             src={'/images/cryptocurrencies.jpg'}
             alt='cryptocurrencies'
