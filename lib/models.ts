@@ -33,8 +33,8 @@ const userSchema = new mongoose.Schema(
 )
 const cryptoSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true, unique: true, },
-    symbol: { type: String, required: true, unique: true, },
+    name: { type: String, required: true,  },
+    symbol: { type: String, required: true,  },
     icon: { type: String },
     price: { type: String, required: true,},
     currentRate: { type: String, required: true, },

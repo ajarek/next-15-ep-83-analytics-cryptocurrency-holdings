@@ -68,9 +68,10 @@ export const updateUser = async (formData: FormData) => {
     redirect('/')
   }
 }
+
+
 export const addCrypto = async (formData: Item[]) => {
   
-
   try {
     connectToDb()
     await Crypto.insertMany(formData.map(item => ({
@@ -91,4 +92,15 @@ export const addCrypto = async (formData: Item[]) => {
   } finally {
     redirect('/')
   }
+}
+
+export const getCrypto = async ()=>{
+  try{
+    await connectToDb()
+    const data = await Crypto.find()
+    return data
+  }catch(err){
+    console.log(err)
+  }
+
 }

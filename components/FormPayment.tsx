@@ -23,7 +23,7 @@ const FormPayment = () => {
           })
           addCrypto(items)
           removeAll()
-          router.push('/')
+          router.push('/dashboard')
         }}
         className='max-w-[480px] w-full   p-4  rounded-lg border-2 border-gray-400  shadow-sm shadow-gray-400'
       >
