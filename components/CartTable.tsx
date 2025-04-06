@@ -60,7 +60,7 @@ const CartTable = () => {
                 <TableCell className='max-sm:hidden'>{item.name}</TableCell>
                 <TableCell>{item.quantity}</TableCell>
                 
-                <TableCell className=''>
+                <TableCell className='max-sm:hidden'>
                   ${(+item.price).toFixed(2)}
                 </TableCell>
                 <TableCell>

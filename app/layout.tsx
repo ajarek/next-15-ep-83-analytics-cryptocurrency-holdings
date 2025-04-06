@@ -80,10 +80,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className='w-full  max-w-[1440px] mx-auto  flex justify-center items-start  min-h-screen bg '>
-           
-              <Sidebar />
-              {children}
-              <Toaster />
+            <Sidebar />
+            {children}
+            <Toaster />
           </div>
         </ThemeProvider>
       </body>

@@ -41,7 +41,10 @@ const RegisterForm = () => {
   return (
     <div className='p-4  flex flex-col items-center rounded-lg border-2 shadow-xl gap-4 min-w-[300px]'>
       <div className='flex justify-center p-2'>
-        <Link href='/' aria-label='Logo'>
+        <Link
+          href='/'
+          aria-label='Logo'
+        >
           <Image
             src='/images/logo.png'
             alt='logo'

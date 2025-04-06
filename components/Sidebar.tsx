@@ -9,7 +9,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip'
-import { ChartNoAxesCombined, House , ScrollText, Users } from 'lucide-react'
+import { ChartNoAxesCombined, House, ScrollText, Users } from 'lucide-react'
 import { Label } from './ui/label'
 import Cart from './Cart'
 
@@ -42,58 +42,56 @@ const Sidebar = async () => {
           <Label className='text-xl max-sm:hidden'>Główna</Label>
         </div>
 
-
-         {session &&
-         <>
-        <div className='w-full flex items-center gap-8'>
-          <Link
-            href='/dashboard'
-            className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center hover:border-2 border-primary  transition-all delay-200'
-          >
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  {' '}
-                  <ChartNoAxesCombined
-                    size={24}
-                    strokeWidth={1}
-                    aria-label='Panel'
-                  />
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Panel</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          </Link>
-          <Label className='text-xl max-sm:hidden'>Panel</Label>
-        </div>
-        <div className='w-full flex items-center gap-8'>
-          <Link
-            href='/cryptoList'
-            className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center hover:border-2 border-primary  transition-all delay-200'
-          >
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  {' '}
-                  <ScrollText 
-                    size={24}
-                    strokeWidth={1}
-                    aria-label='Kryptowaluty'
-                  />
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Kryptowaluty</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          </Link>
-          <Label className='text-xl max-sm:hidden'>Kryptowaluty</Label>
-        </div>
-        </>
-}
-
+        {session && (
+          <>
+            <div className='w-full flex items-center gap-8'>
+              <Link
+                href='/dashboard'
+                className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center hover:border-2 border-primary  transition-all delay-200'
+              >
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      {' '}
+                      <ChartNoAxesCombined
+                        size={24}
+                        strokeWidth={1}
+                        aria-label='Panel'
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Panel</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </Link>
+              <Label className='text-xl max-sm:hidden'>Panel</Label>
+            </div>
+            <div className='w-full flex items-center gap-8'>
+              <Link
+                href='/cryptoList'
+                className='bg-secondary w-8 h-8 rounded-full flex justify-center items-center hover:border-2 border-primary  transition-all delay-200'
+              >
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger>
+                      {' '}
+                      <ScrollText
+                        size={24}
+                        strokeWidth={1}
+                        aria-label='Kryptowaluty'
+                      />
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Kryptowaluty</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </Link>
+              <Label className='text-xl max-sm:hidden'>Kryptowaluty</Label>
+            </div>
+          </>
+        )}
 
         <div className='w-full flex items-center gap-8'>
           <Link
@@ -128,7 +126,7 @@ const Sidebar = async () => {
           <ModeToggle />
           <Label className='text-xl max-sm:hidden'>Tło</Label>
         </div>
-        <Cart/>
+        <Cart />
       </div>
     </div>
   )

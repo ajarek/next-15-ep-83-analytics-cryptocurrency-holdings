@@ -69,21 +69,21 @@ export const updateUser = async (formData: FormData) => {
   }
 }
 
-
 export const addCrypto = async (formData: Item[]) => {
-  
   try {
     connectToDb()
-    await Crypto.insertMany(formData.map(item => ({
-      name: item?.name || '',
-      symbol: item?.symbol || '',
-      icon: item?.icon,
-      price: item?.price,
-      currentRate: item?.currentRate,
-      quantity: item?.quantity,
-      user: item?.user
-    })));
-    
+    await Crypto.insertMany(
+      formData.map((item) => ({
+        name: item?.name || '',
+        symbol: item?.symbol || '',
+        icon: item?.icon,
+        price: item?.price,
+        currentRate: item?.currentRate,
+        quantity: item?.quantity,
+        user: item?.user,
+      }))
+    )
+
     revalidatePath('/')
     return { message: 'Pomyślnie dodano kryptowalutę' }
   } catch (err) {
@@ -94,13 +94,25 @@ export const addCrypto = async (formData: Item[]) => {
   }
 }
 
-export const getCrypto = async ()=>{
-  try{
+export const getCrypto = async () => {
+  try {
     await connectToDb()
     const data = await Crypto.find()
     return data
-  }catch(err){
+  } catch (err) {
     console.log(err)
   }
+}
 
+export const deleteCryptoId = async (formData: FormData) => {
+  const id = formData.get('_id')
+  console.log(id)
+  try {
+    await connectToDb()
+    await Crypto.findOneAndDelete({ _id: id })
+    revalidatePath('/dashboard')
+    return { message: `Deleted record ${id}` }
+  } catch (err) {
+    return { message: 'Failed to delete record' + err }
+  }
 }

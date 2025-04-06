@@ -14,7 +14,7 @@ const CryptoList = async () => {
   return (
     <div className='w-full min-h-[calc(100vh-64px)] flex flex-col justify-center items-center gap-4 '>
       <HeroSection />
-      <TableCrypto/>
+      <TableCrypto />
     </div>
   )
 }

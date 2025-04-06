@@ -6,7 +6,8 @@ import { Label } from '@/components/ui/label'
 import { Button } from '@/components/ui/button'
 import { useCartStore } from '@/store/cartStore'
 import { useToast } from '@/hooks/use-toast'
-import {addCrypto} from '@/lib/action'
+import { addCrypto } from '@/lib/action'
+
 const FormPayment = () => {
   const { items, total, removeAll } = useCartStore()
   const router = useRouter()
